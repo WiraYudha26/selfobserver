@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pengisian Data Cuaca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Formulir Pengisian Data Cuaca</h2>
+    <h3>Irwanto Jayadi Siregar</h3>
+    <form id="weatherForm">
+        <table>
+            <tr>
+                <td>Suhu (°C)</td>
+                <td><input type="text" id="suhu" placeholder="Masukkan suhu"></td>
+            </tr>
+            <tr>
+                <td>Kelembaban (%)</td>
+                <td><input type="text" id="kelembaban" placeholder="Masukkan kelembaban"></td>
+            </tr>
+            <tr>
+                <td>Tekanan (Pa)</td>
+                <td><input type="text" id="tekanan" placeholder="Masukkan tekanan"></td>
+            </tr>
+            <tr>
+                <td>Curah Hujan (mm)</td>
+                <td><input type="text" id="curahHujan" placeholder="Masukkan curah hujan"></td>
+            </tr>
+            <tr>
+                <td>Radiasi Matahari (W/m²)</td>
+                <td><input type="text" id="radiasiMatahari" placeholder="Masukkan radiasi matahari"></td>
+            </tr>
+            <tr>
+                <td>Kecepatan Angin (km/h)</td>
+                <td><input type="text" id="kecepatanAngin" placeholder="Masukkan kecepatan angin"></td>
+            </tr>
+            <tr>
+                <td>Arah Angin (derajat)</td>
+                <td><input type="text" id="arahAngin" placeholder="Masukkan arah angin"></td>
+            </tr>
+        </table>
+        <div class="button-container">
+            <input type="submit" value="Simpan" name="proses">
+        </div>
+    </form>
+
+    <!-- Container untuk menampilkan data -->
+    <div id="displayData" class="data-container">
+        <!-- Data yang diinput akan ditampilkan di sini -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
